@@ -16,9 +16,17 @@
             <td>{{this.nextContactAt}}</td>
             <td>
                 <a href="/client/{{this.id}}">Szczegóły</a>
-                <form method="delete" action="/client/{{this.id}}"><button type="submit">Usuń</button> </form>
+                <form action="/client/{{this.id}}?_method=DELETE" method="POST">
+                    <button type="submit">Usuń</button>
+                </form>
             </td>
         </tr>
     {{/each}}
     </tbody>
 </table>
+
+<p>
+<form action="/client/form/add">
+    <button type="submit">Dodaj nowego klienta</button>
+</form>
+</p>

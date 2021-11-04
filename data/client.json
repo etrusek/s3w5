@@ -1,16 +1,1 @@
-[
-  {
-    "id": "c7cfad9d-54b3-4ff2-9d86-dfc9725c29dd",
-    "name": "poklik",
-    "mail": "mail@mailowy.pl",
-    "notes": "aaa",
-    "nextContactAt": "Tomorrow"
-  },
-  {
-    "id": "c7cfaaaa-54b3-4ff2-9d86-dfc9725c29dd",
-    "name": "Testowy",
-    "mail": "testowy@mailowy.pl",
-    "notes": "",
-    "nextContactAt": "Yesterday"
-  }
-]
+[{"id":"c7cfad9d-54b3-4ff2-9d86-dfc9725c29cd","name":"teddstowy","email":"a@b.c","nextContactAt":"Jutro","notes":"brak"},{"id":"c7cfad9d-54b3-4ff2-9d86-dfc9725c29bd","name":"tesdfdftowy","email":"a@b.c","nextContactAt":"Jutro","notes":"brak"},{"id":"c7cfad9d-54b3-4ff2-9d86-dfc9725c29ad","name":"tesdfgdfgtowy","email":"a@b.c","nextContactAt":"Jutro","notes":"brak"},{"id":"de30daa0-8536-409f-ba64-20a5e58f8acb","name":"Mariusz Lewandowski","mail":"mar.lewandowski@gmail.com","nextContactAt":"2021-11-20","notes":"qweqeqqqqqqqqqaaaaaaaaaa"},{"id":"10df041c-8167-4524-9875-cd2c7913b609","name":"Mariusz Lewandowski","mail":"mar.lewandowski@gmail.com","nextContactAt":"2021-11-20","notes":"qweqe"},{"id":"184125b7-3bbf-451b-bea3-598e22a832ab","name":"Mariuszaaaaaaaa","mail":"mar.lewandowski@gmail.com","nextContactAt":"2021-11-28","notes":"aaaaaaaaaaaaaaaaaaaaaaaaaa"},{"id":"713dfc18-f3ec-404e-aca4-6ddfd4e1698f","name":"aaa","mail":"sss@aaa.pl","nextContactAt":"2021-11-17","notes":"aaaaaaaaa"}]
