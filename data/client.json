@@ -1,1 +1,16 @@
-[{"id":"c7cfad9d-54b3-4ff2-9d86-dfc9725c29dd","name":"poklik","mail":"mail@mailowy.pl"}]
+[
+  {
+    "id": "c7cfad9d-54b3-4ff2-9d86-dfc9725c29dd",
+    "name": "poklik",
+    "mail": "mail@mailowy.pl",
+    "notes": "aaa",
+    "nextContactAt": "Tomorrow"
+  },
+  {
+    "id": "c7cfaaaa-54b3-4ff2-9d86-dfc9725c29dd",
+    "name": "Testowy",
+    "mail": "testowy@mailowy.pl",
+    "notes": "",
+    "nextContactAt": "Yesterday"
+  }
+]

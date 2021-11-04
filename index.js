@@ -15,7 +15,10 @@ app.set('view engine', '.hbs');
 app.use('/', homeRoutes);
 app.use('/client', clientRoutes);
 app.get('/test', (req, res) => {
-db.delete('c7cfaaaa-54b3-4ff2-9d86-dfc9725c29dd')
+    console.log('a0');
+    console.log(db.getAll())    ;
+    console.log('a1');
+    db.getOne('c7cfaaaa-54b3-4ff2-9d86-dfc9725c29dd')
     res.send('ok');
 })
 
