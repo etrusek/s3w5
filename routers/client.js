@@ -1,5 +1,6 @@
 const express = require('express');
 const {db} = require("../utils/db");
+const {NotFoundError} = require("../utils/error");
 
 const clientRoutes = express.Router();
 
@@ -10,23 +11,31 @@ clientRoutes
         })
     })
     .get('/:id', (req, res) => {
+        const client = db.getOne(req.params.id);
+
+        if (!client){
+            throw new NotFoundError()
+        }
+
         res.render('client/one', {
-            client: db.getOne(req.params.id),
+            client,
         })
     })
     .post('/', (req, res) => {
         const id = db.create(req.body)
-        res.render(`client/added`, {
-            name: req.body.name,
-            mail: req.body.mail,
-            nextContactAt: req.body. nextContactAt,
-            notes: req.body.notes,
-            id,
-        })
+        res
+            .status(201)
+            .render(`client/added`, {
+                name: req.body.name,
+                mail: req.body.mail,
+                nextContactAt: req.body.nextContactAt,
+                notes: req.body.notes,
+                id,
+            })
     })
     .put('/:id', (req, res) => {
-        db.update(req.params.id,req.body)
-        res.render('client/modified',{
+        db.update(req.params.id, req.body)
+        res.render('client/modified', {
             client: req.body,
             id: req.params.id
         })
@@ -39,8 +48,14 @@ clientRoutes
         res.render('client/forms/add')
     })
     .get('/form/edit/:id', (req, res) => {
-        res.render('client/forms/edit',{
-            client: db.getOne(req.params.id)
+        const client = db.getOne(req.params.id);
+
+        if (!client){
+            throw new NotFoundError()
+        }
+
+        res.render('client/forms/edit', {
+            client: db.getOne(req.params.id),
         })
     })
 
